@@ -1,0 +1,25 @@
+body
+{
+	text-align:center;
+	background-color:#DEDEDE;
+	font-family: 'Work Sans', sans-serif;
+	font-size:2em;
+}
+
+h1
+{
+	top:6em;
+	text-align:center;
+	font-size:3em;
+}
+
+.navMenu
+{
+	top:-10em;
+	position:fixed;
+	display:inline;
+	left:0em;
+	height:1000em;
+	width:7em;
+	background-color:#757575;
+}
