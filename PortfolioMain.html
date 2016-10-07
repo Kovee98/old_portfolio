@@ -1,23 +1,62 @@
+
+<!--  " ctrl + shift + M "  to view in browser -->
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Joshua Kovalchik</title>
 		<link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="PortfolioMainCSS.css">
-		<link rel="stylesheet" href="animate.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-		
+		<link rel="stylesheet" href="tools/animate/animate.css">
+		<link rel="stylesheet" href="tools/hover/css/hover-min.css">
 	</head>
 	<body>
 		<div class="navMenu">
 		
-			<div class="dropdown">
+			<div class="dropdown hvr-bubble-float-left">
 				<button class="dropbtn">Resume</button>
+			</div>
+			<div class="dropdown hvr-bubble-float-left">
+				<button class="dropbtn">My Projects</button>
+			</div>
+			
+			<div class="dropdown hvr-bubble-float-left">
+				<button class="dropbtn">About Me</button>
+			</div>
+			
+			<div class="dropdown hvr-bubble-float-left">
+				<button class="dropbtn">Contact</button>
 			</div>
 			
 		</div>
+		
 		<h1 class="animated slideInDown">Joshua Kovalchik</h1>
 		<p class="animated slideInLeft">Aspiring Web-Developer</p>
+		
+		
+		<div class="form">
+			<p>Interested? Send me an email!</p>
+			
+			<label class="input">
+				<span>Name</span>
+			<input type="text"/>
+			</label>
+			
+			<label class="input">
+				<span>Company</span>
+			<input type="text"/>
+			</label>
+			
+			<label class="input">
+				<span>Body</span>
+				<input type="text"/>
+			</label>
+			
+			<div>
+				<button class="send">Send</button>
+			</div>
+			
+		</div>
 		
 	</body>
 </html>
