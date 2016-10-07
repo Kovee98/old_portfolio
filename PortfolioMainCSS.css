@@ -1,9 +1,14 @@
 body
 {
+	width:100%;
 	text-align:center;
+	background-image:url("pictures/Inside the green forest_Ultra HD.jpg");
+	background-size:100% 100%;
 	background-color:#DEDEDE;
+	background-attachment:fixed;
 	font-family: 'Work Sans', sans-serif;
 	font-size:2em;
+	color:#212121;
 }
 
 h1
@@ -11,6 +16,39 @@ h1
 	top:6em;
 	text-align:center;
 	font-size:3em;
+}
+
+p
+{
+	color:white;
+}
+
+.footer
+{
+	background-color:#757575;
+	opacity:0.7;
+	position:relative;
+	top:10em;
+	left:-1em;
+	height:1em;
+	width:105%;
+	text-transform:uppercase;
+}
+
+.footer p
+{
+	font-size:18px;
+	color:white;
+}
+
+.title
+{
+	position:relative;
+	text-align:center;
+	padding:none;
+	z-index:-1;
+	left:2em;'
+	top:40%;
 }
 
 .navMenu
@@ -21,9 +59,43 @@ h1
 	display:block;
 	left:0em;
 	height:100em;
-	width:7em;
+	width:5em;
 	background-color:#757575;
-	opacity: 0.5;
+	opacity: 0.7;
+}
+
+.navButtons
+{
+	position:relative;
+	top:5em;
+}
+
+#scaleup
+{
+	width:60%;
+	height:60%;
+}
+
+#scaledown
+{
+	width:2%;
+	height:2%
+}
+
+p span
+{
+	line-height:0.1px;
+	font-size:14px;
+	position:relative;
+	top:44em;
+}
+
+.social
+{
+	position:fixed;
+	bottom:0em;
+	left:-13em;
+	display:inline;
 }
 
 .input {
@@ -35,9 +107,9 @@ h1
   z-index: 1;
   cursor: text;
   pointer-events: none;
-  color: #999;
+  color: black;
   /* Input padding + input border */
-  padding: 7px;
+  padding: 10px;
   /* Firefox does not respond well to different line heights. Use padding instead. */
   line-height: 17px;
   /* This gives a little gap between the cursor and the label */
@@ -46,10 +118,16 @@ h1
 
 .input input, .input textarea, .input select {
   z-index: 0;
-  padding: 6px;
+  padding: 15px;
   margin: 0;
   font: inherit;
   line-height: 17px;
+}
+
+.body
+{
+	width:100%;
+	height:100%;
 }
 
 .input select {
@@ -61,14 +139,17 @@ h1
 .form
 {
 	position:relative;
-	top:20em;
+	top:30em;
+	left:50%;
+	width:10em;
+	height:4em;
 	text-align:center;
 	font-size:18px;
 }
 
 .send
 {
-    width:10%;
+    width:75%;
 	background-color: #757575;
     color: #212121;
     padding: 1em;
