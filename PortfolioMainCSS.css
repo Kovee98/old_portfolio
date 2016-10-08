@@ -2,13 +2,18 @@ body
 {
 	width:100%;
 	text-align:center;
+<<<<<<< HEAD
 	background-image:url("Pictures/house_lights_windows_yard_110184_3840x2160.jpg");
+=======
+	background-image:url("pictures/Inside the green forest_Ultra HD.jpg");
+>>>>>>> 7770b57cca294a89645a3a7512578fc405446d1b
 	background-size:100% 100%;
 	background-color:#DEDEDE;
 	background-attachment:fixed;
 	font-family: 'Work Sans', sans-serif;
 	font-size:2em;
 	color:#212121;
+<<<<<<< HEAD
 	overflow-y: hidden;
 	overflow-x: hidden;
 }
@@ -123,6 +128,8 @@ span
 	left:35%;
 	opacity:0.8;
 	
+=======
+>>>>>>> 7770b57cca294a89645a3a7512578fc405446d1b
 }
 
 h1
@@ -133,15 +140,25 @@ h1
 	font-size:3em;
 }
 
+<<<<<<< HEAD
 .title p
 {
 	line-height:0.2px;
 	font-size:
+=======
+p
+{
+	color:white;
+>>>>>>> 7770b57cca294a89645a3a7512578fc405446d1b
 }
 
 .footer
 {
+<<<<<<< HEAD
 	background-color:white;
+=======
+	background-color:#757575;
+>>>>>>> 7770b57cca294a89645a3a7512578fc405446d1b
 	opacity:0.7;
 	position:relative;
 	top:10em;
@@ -163,14 +180,20 @@ h1
 	text-align:center;
 	padding:none;
 	z-index:-1;
+<<<<<<< HEAD
 	left:0%;
 	top:-18%;
+=======
+	left:2em;'
+	top:40%;
+>>>>>>> 7770b57cca294a89645a3a7512578fc405446d1b
 }
 
 .navMenu
 {
 	top:-10em;
 	vertical-align:middle;
+<<<<<<< HEAD
 	position:fixed;
 	display:block;
 	left:0em;
@@ -324,6 +347,137 @@ p span
 }
 
 
+=======
+	position:fixed;
+	display:block;
+	left:0em;
+	height:100em;
+	width:5em;
+	background-color:#757575;
+	opacity: 0.7;
+}
+
+.navButtons
+{
+	position:relative;
+	top:5em;
+}
+
+#scaleup
+{
+	width:60%;
+	height:60%;
+}
+
+#scaledown
+{
+	width:2%;
+	height:2%
+}
+
+p span
+{
+	line-height:0.1px;
+	font-size:14px;
+	position:relative;
+	top:44em;
+}
+
+.social
+{
+	position:fixed;
+	bottom:0em;
+	left:-13em;
+	display:inline;
+}
+
+.input {
+  display: block;
+}
+
+.input span {
+  position: absolute;
+  z-index: 1;
+  cursor: text;
+  pointer-events: none;
+  color: black;
+  /* Input padding + input border */
+  padding: 10px;
+  /* Firefox does not respond well to different line heights. Use padding instead. */
+  line-height: 17px;
+  /* This gives a little gap between the cursor and the label */
+  margin-left: 2px;
+}
+
+.input input, .input textarea, .input select {
+  z-index: 0;
+  padding: 15px;
+  margin: 0;
+  font: inherit;
+  line-height: 17px;
+}
+
+.body
+{
+	width:100%;
+	height:100%;
+}
+
+.input select {
+  padding: 5em;
+  /* Unfortunately selects don't respond well to padding. They need an explicit height. */
+  height: 31px;
+}
+
+.form
+{
+	position:relative;
+	top:30em;
+	left:50%;
+	width:10em;
+	height:4em;
+	text-align:center;
+	font-size:18px;
+}
+
+.send
+{
+    width:75%;
+	background-color: #757575;
+    color: #212121;
+    padding: 1em;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* the dropdown menu buttons */
+
+/* Style The Dropdown Button */
+.dropbtn
+{
+    background-color: #757575;
+    color: #212121;
+    padding: 1em;
+	width:100%;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown
+{
+	z-index:1;
+    position:relative;
+	vertical-align:middle;
+	width:100%;
+	font-family: 'Work Sans', sans-serif;
+	top:10em;
+	left:0em;
+}
+
+>>>>>>> 7770b57cca294a89645a3a7512578fc405446d1b
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content
 {
@@ -348,8 +502,12 @@ p span
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover
 {
+<<<<<<< HEAD
 	background-color: white;
 	opacity:0.8;
+=======
+	background-color: #f1f1f1;
+>>>>>>> 7770b57cca294a89645a3a7512578fc405446d1b
 }
 
 /* Show the dropdown menu on hover */
@@ -369,6 +527,7 @@ p span
 	margin:auto;
 	text-decoration:none;
 	color:white;
+<<<<<<< HEAD
 }
 
 .header-image #title-area,
@@ -386,3 +545,6 @@ p span
 .header-image #description {
     display: block;
     o
+=======
+}
+>>>>>>> 7770b57cca294a89645a3a7512578fc405446d1b
