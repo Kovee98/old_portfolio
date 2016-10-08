@@ -1,0 +1,160 @@
+body
+{
+	width:100%;
+	text-align:center;
+	background-image:url("Pictures/house_lights_windows_yard_110184_3840x2160.jpg");
+	background-size:100% 100%;
+	background-color:#DEDEDE;
+	background-attachment:fixed;
+	font-family: 'Work Sans', sans-serif;
+	font-size:2em;
+	color:#212121;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.resumePage
+{
+	position:fixed;
+	left:25%;
+	display:inline;
+	height:100%;
+	width: 50%;
+	background-color:white;
+	z-index:1;
+	opacity:0.6;
+}
+
+h1
+{
+	font-family: 'Work Sans', sans-serif;
+	line-height:1em;
+}
+
+p
+{
+	font-size:20px;
+	line-height:0.01em;
+	left:3%;
+}
+
+table
+{
+	width: 40em;
+	word-wrap:break-word;
+	display:block;
+	position:relative;
+	left:2%;
+	font-size:24px;
+}
+
+td
+{
+	position:relative;
+	padding-top:3em;
+	text-align:left;
+}
+
+tr
+{
+	text-align:left;
+}
+
+span
+{
+	text-transform:uppercase;
+	font-weight:bold;
+	text-align:right;
+}
+
+br
+{
+	color:gray;
+}
+
+.inline
+{
+	display:inline;
+}
+
+.space
+{
+	padding-left:2em;
+	background-color:white;
+}
+
+div
+{
+	background-color:white;
+	height:2em;
+}
+
+
+/* Style The Dropdown Button */
+.dropbtn
+{
+    background-color: #757575;
+    color: #212121;
+    padding: 1em;
+	width:100%;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown
+{
+	z-index:1;
+    position:fixed;
+	vertical-align:bottom;
+	width:14%;
+	font-family: 'Work Sans', sans-serif;
+	left:0em;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content
+{
+	font-family: 'Work Sans', sans-serif;
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a
+{
+	font-family: 'Work Sans', sans-serif;
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover
+{
+	background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn
+{
+    background-color:White;
+}
+
+#button
+{
+	margin:auto;
+	text-decoration:none;
+	color:white;
+}
