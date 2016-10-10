@@ -44,36 +44,34 @@ body
 	}
 }
 
-
-
 .title
 {
-	position:relative;
+	position:absolute;
+	left:19%;
 	text-align:center;
 	z-index:-1;
-	top:0%%;
-	font-size:90%;
+	font-size:60%;
 }
 
 .resumePage
 {
-	position:fixed;
-	left:26%;
-	top:-4%;
+	position:absolute;
+	left:28%;
+	top:-5%;
 	display:inline;
 	height:125%;
-	width: 50%;
+	width: 47%;
 	background-color:#aaaaaa;
 	z-index:1;
 	opacity:0.7;
-	font-size:75%;
+	font-size:50%;
 }
 
-.resume
+.resumeText
 {
-	font-size:80%;
+	z-index:1;
 	left:3%;
-	top:-10%;
+	top:-15%;
 }
 
 .aboutMePage
@@ -92,20 +90,29 @@ body
 
 .myProjectsPage
 {
-	position:relative;
-	left:0%;
-	top:0%;
-	display:inline;
-	height:auto;
-	width:auto;
+	position:absolute;
+	width:35%;
+	height:12%;
+	top:2%;
+	left:33%;
 	background-color:#aaaaaa;
 	z-index:1;
 	opacity:0.7;
 }
 
+.projects
+{
+	position:absolute;
+	text-align:center;
+	font-size:110%;
+	font-weight:300;
+	left:10%;
+	top:-15%;
+}
+
 .contactPage
 {
-	position:fixed;
+	position:absolute;
 	left:27%;
 	top:20%;
 	height:60%;
@@ -117,14 +124,17 @@ body
 
 .contactPageText
 {
-	position:relative;
-	font-size:90%;
+	position:absolute;
+	font-size:80%;
+	font-weight:300;
 	text-align:center;
+	left:22%;
+	top:0%;
 }
 
 .navMenu
 {
-	position:fixed;
+	position:absolute;
 	display:block;
 	left:-1%;
 	top:0%;
@@ -153,11 +163,12 @@ body
 .navButtons
 {
 	z-index:1;
-	position:relative;
+	position:absolute;
 	top:-35%;
 	left:-10%;
 	line-height:0%;
-	font-size:100%;
+	font-size:90%;
+	font-weight:100;
 	height:300%;
 	opacity:0.0;
 	background-color:inherit;
@@ -207,33 +218,27 @@ body
 /*-------------------*/
 table
 {
+	position:absolute;
 	word-wrap:break-word;
 	display:block-inline;
-	position:relative;
-	top:-2%;
-	width:95%;
-	height:55%;
-	left:3%;
-	font-size:90%;
-	padding:2%;
-	line-height:10%;
+	top:23%;
+	width:90%;
+	height:40%;
+	left:5%;
 }
 
 td
 {
-	position:relative;
-	text-align:left;
-	padding-top:5%;
-	left:0%;
+	position:absolute;
+	padding-bottom:5%;
+	text-align:right;
 }
 
-tr
+.info
 {
-	line-height:100%;
-	padding-top:5%;
-	vertical-align:text-top;
-	text-align:center;
-	
+	position:absolute;
+	text-align:left;
+	left:20%;
 }
 
 .dates
@@ -253,20 +258,25 @@ span
 
 .download
 {
-	z-index:1;
-    position:relative;
-	top:100%;
+	z-index:2;
+    position:absolute;
+	top:78%;
+	left:35%;
 	width:30%;
-	height:10%;
+	height:8%;
 }
 
 .dropbtnDownload
 {
-    background-color: #606060;
+    background-color: #848484;
     color: #212121;
 	font-family: 'Work Sans', sans-serif;
-    padding: 7%;
-    font-size: 90%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+	padding-right: 9%;
+	padding-left: 9%;
+    font-size: 100%;
+	font-weight:bold;
     border: none;
     cursor: pointer;
 }
@@ -316,13 +326,11 @@ h1
 	height:2%
 }
 
-.input {
-	position:relative;
-	display: block;
+input
+{
+	position:absolute;
 	text-align:left;
-	left:-10%;
-	width:30%;
-	height:60%;
+	padding-bottom:5%;
 }
 
 .input span {
@@ -397,13 +405,12 @@ h1
 
 .form
 {
-	position:relative;
-	display:block;
+	position:absolute;
 	top:12%;
 	left:0%;
 	width:100%;
 	height:50%;
-	text-align:center;
+	text-align:left;
 	font-size:60%;
 }
 
@@ -439,6 +446,22 @@ p span
 	top:93%;
 	left:0.2%;
 }
+
+.dropbtnContact
+{
+    background-color: #848484;
+    color: #212121;
+	font-family: 'Work Sans', sans-serif;
+    padding-top: 5%;
+    padding-bottom: 5%;
+	padding-right: 15%;
+	padding-left: 15%;
+    font-size: 100%;
+	font-weight:bold;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* the dropdown menu buttons */
 
@@ -514,65 +537,62 @@ p span
 	color:white;
 }
 
-.projects
-{
-	
-}
-
 .animation
 {
 	position:fixed;
-	top:45%;
-	left:36%;
+	top:30%;
+	left:25%;
+	width:50%;
+	height:50%;
 }
 
 .desk
 {
 	position:absolute;
-	top:50%;
-	left:15%;
+	top:61%;
+	left:5%;
 }
 
 .computer
 {
 	position:absolute;
-	top:-50%;
-	left:45%;
+	top:0%;
+	left:8%;
 }
 
 .firstBrackets
 {
 	position:absolute;
-	top:37.5%;
-	left:47%;
+	top:8%;
+	left:13%;
 }
 
 .firstLine
 {
 	position:absolute;
-	top:39.5%;
-	left:47%;
+	top:13%;
+	left:13%;
 }
 
 .secondLine
 {
 	position:absolute;
-	top:41.25%;
-	left:47%;
+	top:19%;
+	left:13%;
 }
 
 .thirdLine
 {
 	position:absolute;
-	top:43%;
-	left:47%;
+	top:24%;
+	left:13%;
 }
 
 .lastBrackets
 {
 	position:absolute;
-	top:47%;
-	left:47.15%;
+	top:34%;
+	left:13.15%;
 }
 
 .chair
