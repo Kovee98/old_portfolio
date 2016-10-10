@@ -16,14 +16,43 @@ body
 .page
 {
 	position:absolute;
-	left:25%;
-	top:5%;
+	left:24%;
+	top:30%;
 	display:inline;
 	height:30%;
 	width: 55%;
 	background-color:#aaaaaa;
 	z-index:-1;
 	opacity:0.7;
+	
+	animation-name:pageAnimation;
+	animation-duration:2s;
+	animation-delay:1500ms;
+	animation-fill-mode:forwards;
+}
+
+
+@keyframes pageAnimation
+{
+    0%
+	{
+		top:30%;
+	}
+    100%
+	{
+		top:3%;
+	}
+}
+
+
+
+.title
+{
+	position:relative;
+	text-align:center;
+	z-index:-1;
+	top:0%%;
+	font-size:90%;
 }
 
 .resumePage
@@ -32,12 +61,19 @@ body
 	left:26%;
 	top:-4%;
 	display:inline;
-	height:110%;
+	height:125%;
 	width: 50%;
 	background-color:#aaaaaa;
 	z-index:1;
 	opacity:0.7;
-	font-size:60%;
+	font-size:75%;
+}
+
+.resume
+{
+	font-size:80%;
+	left:3%;
+	top:-10%;
 }
 
 .aboutMePage
@@ -56,9 +92,9 @@ body
 
 .myProjectsPage
 {
-	position:fixed;
-	left:25%;
-	top:20%;
+	position:relative;
+	left:0%;
+	top:0%;
 	display:inline;
 	height:auto;
 	width:auto;
@@ -72,7 +108,6 @@ body
 	position:fixed;
 	left:27%;
 	top:20%;
-	display:inline;
 	height:60%;
 	width: 50%;
 	background-color:#aaaaaa;
@@ -82,10 +117,9 @@ body
 
 .contactPageText
 {
-	position:fixed;
+	position:relative;
 	font-size:90%;
-	top:16%;
-	left:35%;
+	text-align:center;
 }
 
 .navMenu
@@ -136,10 +170,8 @@ body
 .navIcons
 {
 	position:relative;
-	text-align:right;
-	top:0%;
-	right:2%;
-	opacity:0.7;
+	top:2%;
+	left:0%;
 }
 
 .dropbtnMenu
@@ -165,7 +197,7 @@ body
 {
 	z-index:0;
 	position:relative;
-	bottom:0%;
+	bottom:2%;
 	left:0%;
 	display:inline;
 }
@@ -219,33 +251,22 @@ span
 	font-weight:bold;
 }
 
-.resume
-{
-	font-size:80%;
-	line-height:0.01em;
-	left:3%;
-	top:-10%;
-}
-
 .download
 {
 	z-index:1;
-    position:fixed;
-	font-family: 'Work Sans', sans-serif;
-	font-size:100%;
-	left:49%;
-	top:91%;
-	cursor:pointer;
+    position:relative;
+	top:100%;
+	width:30%;
+	height:10%;
 }
 
 .dropbtnDownload
 {
     background-color: #606060;
     color: #212121;
+	font-family: 'Work Sans', sans-serif;
     padding: 7%;
-	width:150%;
-	height:100%;
-    font-size: 50%;
+    font-size: 90%;
     border: none;
     cursor: pointer;
 }
@@ -265,39 +286,12 @@ span
 
 h1
 {
+	position:relative;
 	font-weight:200;
-	top:6em;
 	text-align:center;
-	font-size:3em;
+	font-size:300%;
 }
 
-.title p
-{
-	line-height:0.2px;
-}
-
-.footer
-{
-	background-color:white;
-	background-color:#757575;
-	opacity:0.7;
-	position:relative;
-	top:10em;
-	left:-1em;
-	height:1em;
-	width:105%;
-	text-transform:uppercase;
-}
-.title
-{
-	position:relative;
-	text-align:center;
-	padding:none;
-	z-index:-1;
-	left:2%;
-	top:0%;
-	font-size:80%;
-}
 .scaleup
 {
 	width:60%;
@@ -404,12 +398,13 @@ h1
 .form
 {
 	position:relative;
+	display:block;
 	top:12%;
-	left:5.5%;
-	width:31%;
+	left:0%;
+	width:100%;
 	height:50%;
 	text-align:center;
-	font-size:18px;
+	font-size:60%;
 }
 
 .send
@@ -452,9 +447,9 @@ p span
 {
     background-color: #aaaaaa;
     color: #212121;
-    padding: 1em;
+    padding: 10%;
 	width:100%;
-    font-size: 18px;
+    font-size: 60%;
     border: none;
     cursor: pointer;
 }
@@ -467,8 +462,8 @@ p span
 	vertical-align:middle;
 	width:100%;
 	font-family: 'Work Sans', sans-serif;
-	top:10em;
-	left:0em;
+	top:13%;
+	left:0%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -519,122 +514,72 @@ p span
 	color:white;
 }
 
-@keyframes navBarAnimation
+.projects
 {
-    0%
-	{
-		width: 13%;
-	}
-    25%
-	{
-		width: 11%;
-	}
-    50%
-	{
-		width: 7%;
-	}
-    100%
-	{
-		width: 5%;
-	}
+	
 }
 
-
-
-@-webkit-keyframes slideInLeft {
-  from {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slideInLeft {
-  -webkit-animation-name: slideInLeft;
-  animation-name: slideInLeft;
-}
-
-
-
-@-webkit-keyframes slideInDown 
+.animation
 {
-	from 
-	{
-		-webkit-transform: translate3d(0, -100%, 0);
-		transform: translate3d(0, -100%, 0);
-		visibility: visible;
-	}
-	to 
-	{
-		-webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
+	position:fixed;
+	top:45%;
+	left:36%;
 }
 
-@keyframes slideInDown {
-  from {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.desk
+{
+	position:absolute;
+	top:50%;
+	left:15%;
 }
 
-.slideInDown {
-  -webkit-animation-name: slideInDown;
-  animation-name: slideInDown;
+.computer
+{
+	position:absolute;
+	top:-50%;
+	left:45%;
 }
 
-
-@-webkit-keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.firstBrackets
+{
+	position:absolute;
+	top:37.5%;
+	left:47%;
 }
 
-@keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.firstLine
+{
+	position:absolute;
+	top:39.5%;
+	left:47%;
 }
 
-.slideInRight {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
+.secondLine
+{
+	position:absolute;
+	top:41.25%;
+	left:47%;
+}
+
+.thirdLine
+{
+	position:absolute;
+	top:43%;
+	left:47%;
+}
+
+.lastBrackets
+{
+	position:absolute;
+	top:47%;
+	left:47.15%;
+}
+
+.chair
+{
+	position:absolute;
+	top:35%;
+	left:38%;
+	width:70%;
+	height:70%;
 }
