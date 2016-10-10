@@ -1,3 +1,20 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="chemicaleuphoria98@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,28 +28,54 @@
 	</head>
 	<body>
 		<div class="contactPage">
-			<p>Interested? Send me an email!</p>
+			<p class="contactPageText">Interested? Send me an email!</p>
+			
 			<div class="form">
-				<label class="input">
-					<span>Name</span>
-				<input type="text"/>
-				</label>
-				<label class="input">
-					<span>Company</span>
-				<input type="text"/>
-				</label>
-				<label class="inputBody">
-					<span>Body</span>
-					<input type="text"/>
-				</label>
-				<div>
-					<button class="send">Send</button>
-				</div>
+			
+				<form action="" method="post">
+				
+					<label>Name:</label>
+					<input name="sender">
+
+					<label>Email address:</label>
+					<input name="senderEmail">
+
+					<label>Message:</label>
+					<textarea rows="5" cols="20" name="message"></textarea>
+					
+					<table>
+						<tr>
+							<td>
+								<div class="send hvr-grow">
+									<input type="submit" value="submit">
+								</div>
+							</td>
+							<td>
+								<div class="reset hvr-grow">
+									<input type="reset" value="Reset">
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+				
 			</div>
 		</div>
 		
+		
+		
 		<div class="navMenu">
+			
+			<div class="navIcons">
+				<img class="scaledown" src="pictures/visualeditor_-_icon_-_menusvg.png"/>
+			</div>
+			
 			<div class="navButtons">
+				<div class="dropdown hvr-bubble-float-left">
+					<a href="PortfolioMain.html"><button class="dropbtn">Home</button></a>
+				</div>
+				
 				<div class="dropdown hvr-bubble-float-left">
 					<a href="OnlineResume.html"><button class="dropbtn">Resume</button></a>
 				</div>
@@ -48,33 +91,13 @@
 					<a href="Contact.html"><button class="dropbtn">Contact</button></a>
 				</div>
 			</div>
-			
-			<p><span>Find Me On Social Media!</span></p>
-			<div class="social">
-				<a href="https://github.com/Kovee98"><img class="hvr-grow" id="scaledown" src="http://www.freeiconspng.com/uploads/github-logo-icon-0.png"/></a>
-				<a href="https://www.facebook.com/eyecandy101"><img class="hvr-grow" id="scaledown" src="https://www.facebook.com/images/fb_icon_325x325.png"/></a>
-				<a href="http://joshuakovalchik.tumblr.com/"><img class="hvr-grow" id="scaledown" src="https://assets.tumblr.com/images/logo_page/img_logo_bluebg_2x.png"/></a>
-			</div>
 		</div>
 		
-		<!-- <p>Interested? Send me an email!</p>
-		<div class="form">
-			<label class="input">
-				<span>Name</span>
-			<input type="text"/>
-			</label>
-			<label class="input">
-				<span>Company</span>
-			<input type="text"/>
-			</label>
-			<label class="inputBody">
-				<span>Body</span>
-				<input type="text"/>
-			</label>
-			<div>
-				<button class="send">Send</button>
-			</div>
+		<div class="social">
+			<p><span>Find Me On Social Media!</span></p>
+			<a href="https://github.com/Kovee98"><img class="hvr-float-shadow" id="scaledown" src="http://www.freeiconspng.com/uploads/github-logo-icon-0.png"/></a>
+			<a href="https://www.facebook.com/eyecandy101"><img class="hvr-float-shadow" id="scaledown" src="https://www.facebook.com/images/fb_icon_325x325.png"/></a>
+			<a href="http://joshuakovalchik.tumblr.com/"><img class="hvr-float-shadow" id="scaledown" src="https://assets.tumblr.com/images/logo_page/img_logo_bluebg_2x.png"/></a>
 		</div>
-		 -->
 	</body>
 </html>
