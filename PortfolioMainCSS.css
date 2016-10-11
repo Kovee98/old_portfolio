@@ -19,8 +19,8 @@ body
 	left:24%;
 	top:30%;
 	display:inline;
-	height:30%;
-	width: 55%;
+	height:15vw;
+	width: 55vw;
 	background-color:#aaaaaa;
 	z-index:-1;
 	opacity:0.7;
@@ -50,7 +50,7 @@ body
 	left:19%;
 	text-align:center;
 	z-index:-1;
-	font-size:60%;
+	font-size:1.50vw;
 }
 
 .resumePage
@@ -59,29 +59,31 @@ body
 	left:28%;
 	top:-5%;
 	display:inline;
-	height:125%;
-	width: 47%;
+	height:60vw;
+	width: 48vw;
 	background-color:#aaaaaa;
 	z-index:1;
 	opacity:0.7;
-	font-size:50%;
+	font-size:1.20vw;
 }
 
 .resumeText
 {
+	position:absolute;
 	z-index:1;
-	left:3%;
-	top:-15%;
+	left:2%;
+	top:4%;
+	line-height:1.5vw;
 }
 
 .aboutMePage
 {
-	position:fixed;
-	left:30%;
-	top:12%;
+	position:absolute;
+	left:26%;
+	top:25%;
 	display:inline;
 	height:auto;
-	width:45%;
+	width:50vw;
 	background-color:#aaaaaa;
 	z-index:1;
 	opacity:0.7;
@@ -91,10 +93,10 @@ body
 .myProjectsPage
 {
 	position:absolute;
-	width:35%;
-	height:12%;
 	top:2%;
 	left:33%;
+	height:6vw;
+	width:35vw;
 	background-color:#aaaaaa;
 	z-index:1;
 	opacity:0.7;
@@ -103,20 +105,20 @@ body
 .projects
 {
 	position:absolute;
-	text-align:center;
-	font-size:110%;
-	font-weight:300;
-	left:10%;
+	left:8%;
 	top:-15%;
+	text-align:center;
+	font-size:2.75vw;
+	font-weight:200;
 }
 
 .contactPage
 {
 	position:absolute;
-	left:27%;
+	left:26%;
 	top:20%;
-	height:60%;
-	width: 50%;
+	height:30vw;
+	width: 50vw;
 	background-color:#aaaaaa;
 	z-index:1;
 	opacity:0.7;
@@ -138,8 +140,8 @@ body
 	display:block;
 	left:-1%;
 	top:0%;
-	height:110%;
-	width:5%;
+	height:100vw;
+	width:4vw;
 	background-color:#aaaaaa;
 	opacity: 0.7;
 	
@@ -151,7 +153,7 @@ body
 .navMenu:hover
 {
 	left:0%;
-	width:13%;
+	width:13vw;
 }
 
 .navButtons:hover
@@ -167,9 +169,9 @@ body
 	top:-35%;
 	left:-10%;
 	line-height:0%;
-	font-size:90%;
+	font-size:1.90vw;
 	font-weight:100;
-	height:300%;
+	height:300vw;
 	opacity:0.0;
 	background-color:inherit;
 	
@@ -185,32 +187,11 @@ body
 	left:0%;
 }
 
-.dropbtnMenu
-{
-    background-color: inherit;
-    padding:0%;
-	width:32%;
-	height:32%;
-    border: none;
-    cursor: pointer;
-}
-
-.socialText
-{
-	position:fixed;
-	left:0.3%;
-	bottom:5%;
-	font-size:45%;
-	color:inherit;
-}
-
 .social
 {
-	z-index:0;
-	position:relative;
-	bottom:2%;
-	left:0%;
-	display:inline;
+	position:absolute;
+	bottom:10%;
+	left:5%;
 }
 
 
@@ -222,15 +203,15 @@ table
 	word-wrap:break-word;
 	display:block-inline;
 	top:23%;
-	width:90%;
-	height:40%;
-	left:5%;
+	left:4%;
+	width:46vw;
+	height:25vw;
 }
 
 td
 {
 	position:absolute;
-	padding-bottom:5%;
+	padding-bottom:20vw;
 	text-align:right;
 }
 
@@ -245,7 +226,6 @@ td
 {
 	font-style:italic;
 	color:gray;
-	font-weight:normal;
 }
 
 span
@@ -260,10 +240,10 @@ span
 {
 	z-index:2;
     position:absolute;
-	top:78%;
-	left:35%;
-	width:30%;
-	height:8%;
+	top:77%;
+	left:36%;
+	width:auto;
+	height:auto;
 }
 
 .dropbtnDownload
@@ -271,11 +251,11 @@ span
     background-color: #848484;
     color: #212121;
 	font-family: 'Work Sans', sans-serif;
-    padding-top: 5%;
-    padding-bottom: 5%;
-	padding-right: 9%;
-	padding-left: 9%;
-    font-size: 100%;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+	padding-right: 2.5vw;
+	padding-left: 2.5vw;
+    font-size: 1.15vw;
 	font-weight:bold;
     border: none;
     cursor: pointer;
@@ -329,101 +309,95 @@ h1
 input
 {
 	position:absolute;
+	left:3%;
 	text-align:left;
-	padding-bottom:5%;
+	width:48.5vw;
+	height:2vw;
 }
 
-.input span {
-  position: relative;
-  z-index: 1;
-  cursor: text;
-  pointer-events: none;
-  color: #212121;
-  /* Input padding + input border */
-  /* Firefox does not respond well to different line heights. Use padding instead. */
-  line-height: 10%;
-  /* This gives a little gap between the cursor and the label */
-  margin-left: 0%;
-}
-
-.input input, .input textarea, .input select {
-	position:relative;
-	background-color:#aaaaaa;
-	border:1px solid #757575;
-	z-index: 0;
-	padding: 7%;
-	margin: 0;
-	font: inherit;
-	line-height: 5%;
-	width:1000%;
-}
-
-.input select {
-	padding: 100%;
-	/* Unfortunately selects don't respond well to padding. They need an explicit height. */
-	height: 50%;
-}
-
-.big
+textarea
 {
-	position:relative;
-	top:-25%;
+	position:absolute;
+	left:3%;
+	top:110%;
+	text-align:left;
+	padding-bottom:2vw;
+	width:48.5vw;
+	height:7vw;
+	background-color:transparent;
+	border:0.01vw solid #757575;
+	font-family: 'Work Sans', sans-serif;
+	font-size:1.5vw;
 }
 
-.big input, .big textarea, .big select {
-	position:relative;
-	font: inherit;
-	line-height: 5%;
-	width:1000%;
-	height:140%;
-	padding-bottom:200%;
-    word-wrap: break-word;
-    word-break: break-all;
-}
-
-
-.bigSpan
+.message
 {
-	position: fixed;
-	top:-2%;
-	z-index: 1;
-	cursor: text;
-	pointer-events: none;
-	color: #212121;
-	/* Input padding + input border */
-	/* Firefox does not respond well to different line heights. Use padding instead. */
-	line-height: 0%;
-	/* This gives a little gap between the cursor and the label */
-	margin-left: 0%;
+	position:absolute;
+	text-align:left;
+	top:80%;
 }
 
-.big select {
-	padding: 0%;
-	/* Unfortunately selects don't respond well to padding. They need an explicit height. */
-	height: 0%;
+.name
+{
+	position:absolute;
+	left:3%;
+	top:-45%;
+	text-align:left;
+}
+
+.nameArea
+{
+	position:absolute;
+	left:3%;
+	top:-20%;
+	text-align:left;
+	background-color:transparent;
+	border:0.01vw solid #757575;
+	font-family: 'Work Sans', sans-serif;
+	font-size:1.5vw;
+}
+
+.email
+{
+	position:absolute;
+	left:3%;
+	top:20%;
+	text-align:left;
+}
+
+.emailArea
+{
+	position:absolute;
+	left:3%;
+	top:45%;
+	text-align:left;
+	background-color:transparent;
+	border:0.01vw solid #757575;
+	font-family: 'Work Sans', sans-serif;
+	font-size:1.5vw;
 }
 
 .form
 {
 	position:absolute;
-	top:12%;
-	left:0%;
-	width:100%;
-	height:50%;
+	top:25%;
+	left:-5%;
+	width:100vw;
+	height:auto;
 	text-align:left;
-	font-size:60%;
+	font-size:1vw;
+	
 }
 
-.send
+label
 {
-	z-index:1;
-    position:fixed;
-	width:15%;
-	height:5%;
-	font-family: 'Work Sans', sans-serif;
-	left:52%;
-	top:70%;
-	cursor: pointer;
+	position:absolute;
+	display:block;
+	text-align:left;
+	left:3%;
+	top:0%;
+	font-size:1.5vw;
+	line-height:2vw;
 }
 
 .reset
@@ -433,33 +407,38 @@ input
 	width:15%;
 	height:5%;
 	font-family: 'Work Sans', sans-serif;
-	left:35%;
-	top:70%;
+	left:37%;
+	top:77%;
 	cursor: pointer;
 }
 
-p span
+.send
 {
-	line-height:0.1px;
-	font-size:14px;
-	position:fixed;
-	top:93%;
-	left:0.2%;
+	z-index:1;
+    position:fixed;
+	width:15%;
+	height:5%;
+	font-family: 'Work Sans', sans-serif;
+	left:47%;
+	top:77%;
+	cursor: pointer;
 }
 
 .dropbtnContact
 {
+	position:absolute;
+	bottom:25%;
+	left:25%;
     background-color: #848484;
     color: #212121;
 	font-family: 'Work Sans', sans-serif;
-    padding-top: 5%;
-    padding-bottom: 5%;
-	padding-right: 15%;
-	padding-left: 15%;
-    font-size: 100%;
+    font-size: 1.25vw;
 	font-weight:bold;
-    border: none;
-    cursor: pointer;
+	text-align:center;
+	height:3vw;
+	width:9vw;
+    border:none;
+    cursor:pointer;
 }
 
 

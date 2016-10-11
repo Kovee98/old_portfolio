@@ -13,30 +13,30 @@
 		<div class="contactPage">
 			<p class="contactPageText">Interested? Send me an email!</p>
 			
-			<div class="form">
+			<div>
 			
-				<form action="mailto:chemicaleuphoria98@gmail.com" method="post">
+				<form action="sendemail.php" method="post">
 				
-					<table>
+					<div class="form">
 						<tr>
 							<td>
-								<label>Name</label>
-								<br><input name="sender"></br>
+								<label class="name">Name</label>
+								<br><input class="nameArea" name="sender"></br>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label>Email</label>
-								<br><input name="senderEmail"></br>
+								<label class="email">Email</label>
+								<br><input class="emailArea" name="senderEmail"></br>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label>Message</label>
-								<br><textarea rows="9" cols="85" name="message"></textarea></br>
+								<label class="message">Message</label>
+								<br><textarea name="message"></textarea></br>
 							</td>
 						</tr>
-					</table>
+					</div>
 					
 					<div class="download reset hvr-grow">
 						<input class="dropbtnContact" type="reset" value="Reset">
@@ -45,7 +45,10 @@
 						<input class="dropbtnContact" type="submit" value="Send">
 					</div>
 					
+					
 				</form>
+				
+				
 				
 			</div>
 		</div>
