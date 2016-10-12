@@ -1,13 +1,13 @@
 body
 {
-	width:100%;
+	width:100vw;
 	text-align:center;
 	background-image:url("Pictures/house_lights_windows_yard_110184_3840x2160.jpg");
 	background-size:100% 100%;
 	background-color:#DEDEDE;
 	background-attachment:fixed;
 	font-family: 'Work Sans', sans-serif;
-	font-size:200%;
+	font-size:2vw;
 	color:#212121;
 	overflow-y: hidden;
 	overflow-x: hidden;
@@ -16,10 +16,10 @@ body
 .page
 {
 	position:absolute;
-	left:24%;
-	top:30%;
+	left:24vw;
+	top:30vh;
 	display:inline;
-	height:15vw;
+	height:30vh;
 	width: 55vw;
 	background-color:#aaaaaa;
 	z-index:-1;
@@ -36,18 +36,18 @@ body
 {
     0%
 	{
-		top:30%;
+		top:30vh;
 	}
     100%
 	{
-		top:3%;
+		top:2vh;
 	}
 }
 
 .title
 {
 	position:absolute;
-	left:19%;
+	left:10vw;
 	text-align:center;
 	z-index:-1;
 	font-size:1.50vw;
@@ -56,10 +56,10 @@ body
 .resumePage
 {
 	position:absolute;
-	left:28%;
-	top:-5%;
+	left:26vw;
+	top:-1vh;
 	display:inline;
-	height:60vw;
+	height:110vh;
 	width: 48vw;
 	background-color:#aaaaaa;
 	z-index:1;
@@ -71,31 +71,31 @@ body
 {
 	position:absolute;
 	z-index:1;
-	left:2%;
-	top:4%;
+	left:1vw;
+	top:2vh;
 	line-height:1.5vw;
 }
 
 .aboutMePage
 {
 	position:absolute;
-	left:26%;
-	top:25%;
+	left:26vw;
+	top:30vh;
 	display:inline;
 	height:auto;
 	width:50vw;
 	background-color:#aaaaaa;
 	z-index:1;
 	opacity:0.7;
-	font-size:80%;
+	font-size:1.5vw;
 }
 
 .myProjectsPage
 {
 	position:absolute;
-	top:2%;
-	left:33%;
-	height:6vw;
+	top:4vh;
+	left:33vw;
+	height:12vh;
 	width:35vw;
 	background-color:#aaaaaa;
 	z-index:1;
@@ -105,8 +105,8 @@ body
 .projects
 {
 	position:absolute;
-	left:8%;
-	top:-15%;
+	left:3vw;
+	top:-2vh;
 	text-align:center;
 	font-size:2.75vw;
 	font-weight:200;
@@ -115,9 +115,9 @@ body
 .contactPage
 {
 	position:absolute;
-	left:26%;
-	top:20%;
-	height:30vw;
+	left:26vw;
+	top:16vh;
+	height:60vh;
 	width: 50vw;
 	background-color:#aaaaaa;
 	z-index:1;
@@ -127,20 +127,20 @@ body
 .contactPageText
 {
 	position:absolute;
-	font-size:80%;
+	font-size:1.5vw;
 	font-weight:300;
 	text-align:center;
-	left:22%;
-	top:0%;
+	left:13.5vw;
+	top:0vh;
 }
 
 .navMenu
 {
 	position:absolute;
 	display:block;
-	left:-1%;
-	top:0%;
-	height:100vw;
+	left:-1vw;
+	top:0vh;
+	height:110vh;
 	width:4vw;
 	background-color:#aaaaaa;
 	opacity: 0.7;
@@ -152,26 +152,26 @@ body
 
 .navMenu:hover
 {
-	left:0%;
+	left:0vw;
 	width:13vw;
 }
 
 .navButtons:hover
 {
 	opacity:1;
-	left:0%;
+	left:0vw;
 }
 
 .navButtons
 {
 	z-index:1;
 	position:absolute;
-	top:-35%;
-	left:-10%;
-	line-height:0%;
+	top:-75vh;
+	left:0vw;
+	line-height:0vw;
 	font-size:1.90vw;
 	font-weight:100;
-	height:300vw;
+	height:600vh;
 	opacity:0.0;
 	background-color:inherit;
 	
@@ -180,18 +180,14 @@ body
 	transition-timing-function: linear;
 }
 
-.navIcons
-{
-	position:relative;
-	top:2%;
-	left:0%;
-}
-
 .social
 {
 	position:absolute;
-	bottom:10%;
-	left:5%;
+	bottom:0vh;
+	left:26vw;
+	background-color:#aaaaaa;
+	width:50vw;
+	opacity:0.7;
 }
 
 
@@ -202,16 +198,15 @@ table
 	position:absolute;
 	word-wrap:break-word;
 	display:block-inline;
-	top:23%;
-	left:4%;
+	top:23vh;
+	left:2vw;
 	width:46vw;
-	height:25vw;
+	height:50vh;
 }
 
 td
 {
 	position:absolute;
-	padding-bottom:20vw;
 	text-align:right;
 }
 
@@ -219,7 +214,7 @@ td
 {
 	position:absolute;
 	text-align:left;
-	left:20%;
+	left:9vw;
 }
 
 .dates
@@ -240,8 +235,8 @@ span
 {
 	z-index:2;
     position:absolute;
-	top:77%;
-	left:36%;
+	top:93vh;
+	left:17.5vw;
 	width:auto;
 	height:auto;
 }
@@ -251,8 +246,8 @@ span
     background-color: #848484;
     color: #212121;
 	font-family: 'Work Sans', sans-serif;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 	padding-right: 2.5vw;
 	padding-left: 2.5vw;
     font-size: 1.15vw;
@@ -264,34 +259,12 @@ span
 /* end of resume table stuff */
 /*---------------------------*/
 
-
-.logo
-{
-	position:fixed;
-	vertical-align:middle;
-	top:35%;
-	left:35%;
-	opacity:0.8;
-}
-
 h1
 {
 	position:relative;
 	font-weight:200;
 	text-align:center;
-	font-size:300%;
-}
-
-.scaleup
-{
-	width:60%;
-	height:60%;
-}
-
-.scaledown
-{
-	width:30%;
-	height:30%
+	font-size:4.5vw;
 }
 
 #scaleup
@@ -309,21 +282,20 @@ h1
 input
 {
 	position:absolute;
-	left:3%;
 	text-align:left;
 	width:48.5vw;
-	height:2vw;
+	height:4vh;
 }
 
 textarea
 {
 	position:absolute;
-	left:3%;
-	top:110%;
+	left:3.15vw;
+	top:16vh;
 	text-align:left;
 	padding-bottom:2vw;
-	width:48.5vw;
-	height:7vw;
+	width:48.05vw;
+	height:16vh;
 	background-color:transparent;
 	border:0.01vw solid #757575;
 	font-family: 'Work Sans', sans-serif;
@@ -334,22 +306,23 @@ textarea
 {
 	position:absolute;
 	text-align:left;
-	top:80%;
+	top:12vh;
+	left:3.15vw;
 }
 
 .name
 {
 	position:absolute;
-	left:3%;
-	top:-45%;
+	left:3vw;
+	top:-6.75vh;
 	text-align:left;
 }
 
 .nameArea
 {
 	position:absolute;
-	left:3%;
-	top:-20%;
+	left:3vw;
+	top:-3vh;
 	text-align:left;
 	background-color:transparent;
 	border:0.01vw solid #757575;
@@ -360,16 +333,16 @@ textarea
 .email
 {
 	position:absolute;
-	left:3%;
-	top:20%;
+	left:3vw;
+	top:1.35vw;
 	text-align:left;
 }
 
 .emailArea
 {
 	position:absolute;
-	left:3%;
-	top:45%;
+	left:3vw;
+	top:6.5vh;
 	text-align:left;
 	background-color:transparent;
 	border:0.01vw solid #757575;
@@ -380,8 +353,8 @@ textarea
 .form
 {
 	position:absolute;
-	top:25%;
-	left:-5%;
+	top:15vh;
+	left:-2.40vw;
 	width:100vw;
 	height:auto;
 	text-align:left;
@@ -394,49 +367,45 @@ label
 	position:absolute;
 	display:block;
 	text-align:left;
-	left:3%;
-	top:0%;
 	font-size:1.5vw;
 	line-height:2vw;
 }
 
 .reset
 {
-	z-index:1;
-    position:fixed;
-	width:15%;
-	height:5%;
+    position:absolute;
+	height:auto;
 	font-family: 'Work Sans', sans-serif;
-	left:37%;
-	top:77%;
+	left:9.25vw;
+	top:53vh;
+	height:6vh;
+	width:0vw;
 	cursor: pointer;
 }
 
 .send
 {
-	z-index:1;
-    position:fixed;
-	width:15%;
-	height:5%;
+    position:absolute;
+	height:auto;
 	font-family: 'Work Sans', sans-serif;
-	left:47%;
-	top:77%;
+	left:25.25vw;
+	top:53vh;
+	height:6vh;
+	width:0vw;
 	cursor: pointer;
 }
 
 .dropbtnContact
 {
 	position:absolute;
-	bottom:25%;
-	left:25%;
     background-color: #848484;
     color: #212121;
 	font-family: 'Work Sans', sans-serif;
-    font-size: 1.25vw;
-	font-weight:bold;
+    font-size: 1.5vw;
+	font-weight:300;
 	text-align:center;
-	height:3vw;
-	width:9vw;
+	height:6vh;
+	width:14vw;
     border:none;
     cursor:pointer;
 }
@@ -518,67 +487,58 @@ label
 
 .animation
 {
-	position:fixed;
-	top:30%;
-	left:25%;
-	width:50%;
-	height:50%;
+	position:relative;
+	top:35vh;
+	left:32vw;
+	width:20vw;
+	height:16.2vw;
 }
 
 .desk
 {
 	position:absolute;
-	top:61%;
-	left:5%;
+	top:20.5vh;
+	left:2vw;
 }
 
 .computer
 {
 	position:absolute;
-	top:0%;
-	left:8%;
+	top:0vh;
+	left:5vw;
 }
 
 .firstBrackets
 {
-	position:absolute;
-	top:8%;
-	left:13%;
+	position:relative;
+	top:1.75vh;
+	left:-1.5vw;
 }
 
 .firstLine
 {
-	position:absolute;
-	top:13%;
-	left:13%;
+	position:relative;
+	top:-1vh;
+	left:.6vw;
 }
 
 .secondLine
 {
-	position:absolute;
-	top:19%;
-	left:13%;
+	position:relative;
+	top:-4vh;
+	left:0vw;
 }
 
 .thirdLine
 {
-	position:absolute;
-	top:24%;
-	left:13%;
+	position:relative;
+	top:-7vh;
+	left:.25vw;
 }
 
 .lastBrackets
 {
-	position:absolute;
-	top:34%;
-	left:13.15%;
-}
-
-.chair
-{
-	position:absolute;
-	top:35%;
-	left:38%;
-	width:70%;
-	height:70%;
+	position:relative;
+	top:-8vh;
+	left:-1.60vw;
 }
