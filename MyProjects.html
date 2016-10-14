@@ -10,34 +10,40 @@
 		<link rel="stylesheet" href="tools/hover/css/hover-min.css">
 	</head>
 	<body>
-	
-		<div class="animation">
-			<div class="desk animated slideInLeft">
-				<img src="pictures/animation/desk.png"/>
-			</div>
-			<div class="computer animated slideInRight">
-				<img src="pictures/animation/computer.png"/>
-			</div>
-			<div class="firstBrackets animated bounceIn">
-				<img src="pictures/animation/first_brackets.png"/>
-			</div>
-			<div class="firstLine animated bounceInLeft">
-				<img src="pictures/animation/first_line.png"/>
-			</div>
-			<div class="secondLine animated bounceInDown">
-				<img src="pictures/animation/second_line.png"/>
-			</div>
-			<div class="thirdLine animated bounceInRight">
-				<img src="pictures/animation/third_line.png"/>
-			</div>
-			<div class="lastBrackets animated bounceInUp">
-				<img src="pictures/animation/last_brackets.png"/>
-			</div>
+		
+		<div class="header"></div>
+		<div class="left"></div>
+		<div class="myProjectsPage">
+			<h1 class="projects animated fadeInDown">Working on something...</h1>
 		</div>
 		
-		<div class="myProjectsPage">
-			<h2 class="projects animated fadeInDown">Working on something...</h2>
+		
+		<div class="animation">
+			
+			<div class="computer animated slideInRight">
+				
+				<img src="pictures/animation/computer.png"/>
+				<!-- maybe another container here just for the lines on the computer?? -->
+				<div class="code">
+					<img class="animated bounceIn" src="pictures/animation/first_brackets.png"/>
+					
+					<img class="animated bounceInLeft" src="pictures/animation/first_line.png"/>
+					
+					<img class="animated bounceInDown" src="pictures/animation/second_line.png"/>
+					
+					<img class="animated bounceInRight" src="pictures/animation/third_line.png"/>
+					
+					<img class="animated bounceInUp" src="pictures/animation/last_brackets.png"/>
+				</div>
+			</div>
+			
+			<img class="desk animated slideInLeft" src="pictures/animation/desk.png"/>
+			
 		</div>
+		
+		<div class="right"></div>
+		<div class="footer"></div>
+		
 		
 		<div class="navMenu">
 			
@@ -50,7 +56,7 @@
 					<a href="OnlineResume.html"><button class="dropbtn">Resume</button></a>
 				</div>
 				<div class="dropdown hvr-bubble-float-left">
-					<a href="MyProjects.html"><button class="dropbtn">My Projects</button></a>
+					<a href="MyProjects.html"><button class="dropbtn">My Work</button></a>
 				</div>
 				
 				<div class="dropdown hvr-bubble-float-left">
@@ -62,5 +68,7 @@
 				</div>
 			</div>
 		</div>
+		
+		
 	</body>
 </html>

@@ -1,16 +1,46 @@
 body
 {
-	width:100vw;
 	text-align:center;
 	background-image:url("Pictures/house_lights_windows_yard_110184_3840x2160.jpg");
 	background-size:100% 100%;
 	background-color:#DEDEDE;
 	background-attachment:fixed;
 	font-family: 'Work Sans', sans-serif;
-	font-size:2vw;
 	color:#212121;
 	overflow-y: hidden;
 	overflow-x: hidden;
+}
+
+.header
+{
+	width:100%;
+	padding:0.5em 2em;
+	background-color:blue;
+}
+
+.footer
+{
+	width:100%;
+	padding:0.5em 2em;
+	clear:both;
+	background-color:blue;
+}
+
+.right
+{
+	margin-bottom:1em;
+	margin-left:3%;
+	width:20%;
+	background-color:red;
+}
+
+
+.left
+{
+	margin-bottom:1em;
+	margin-left:3%;
+	width:20%;
+	background-color:red;
 }
 
 .page
@@ -55,25 +85,11 @@ body
 
 .resumePage
 {
-	position:absolute;
-	left:26vw;
-	top:-1vh;
-	display:inline;
-	height:110vh;
-	width: 48vw;
+	position:relative;
+	width:40em;
+	margin:auto;
 	background-color:#aaaaaa;
-	z-index:1;
 	opacity:0.7;
-	font-size:1.20vw;
-}
-
-.resumeText
-{
-	position:absolute;
-	z-index:1;
-	left:1vw;
-	top:2vh;
-	line-height:1.5vw;
 }
 
 .aboutMePage
@@ -85,31 +101,25 @@ body
 	height:auto;
 	width:50vw;
 	background-color:#aaaaaa;
-	z-index:1;
 	opacity:0.7;
 	font-size:1.5vw;
 }
 
 .myProjectsPage
 {
-	position:absolute;
-	top:4vh;
-	left:33vw;
-	height:12vh;
-	width:35vw;
+	width:auto;
+	position:relative;
 	background-color:#aaaaaa;
-	z-index:1;
 	opacity:0.7;
+	font-weight:200;
+	font-size:100%;
 }
 
 .projects
 {
-	position:absolute;
-	left:3vw;
-	top:-2vh;
+	position:relative;
 	text-align:center;
-	font-size:2.75vw;
-	font-weight:200;
+	padding:0.40em;
 }
 
 .contactPage
@@ -136,6 +146,7 @@ body
 
 .navMenu
 {
+	float:left;
 	position:absolute;
 	display:block;
 	left:-1vw;
@@ -144,7 +155,6 @@ body
 	width:4vw;
 	background-color:#aaaaaa;
 	opacity: 0.7;
-	
 	transition-property: width,left;
 	transition-duration: 400ms;
 	transition-timing-function: linear;
@@ -168,6 +178,7 @@ body
 	position:absolute;
 	top:-75vh;
 	left:0vw;
+	
 	line-height:0vw;
 	font-size:1.90vw;
 	font-weight:100;
@@ -195,26 +206,30 @@ body
 /*-------------------*/
 table
 {
-	position:absolute;
+	position:relative;
 	word-wrap:break-word;
 	display:block-inline;
-	top:23vh;
-	left:2vw;
-	width:46vw;
-	height:50vh;
+	width:36em;
+	height:30em;
+	margin:auto;
+}
+
+tr
+{
+	position:relative;
+	vertical-align:top;
 }
 
 td
 {
-	position:absolute;
-	text-align:right;
+	position:relative;
+	padding:1em 2em;
 }
 
 .info
 {
-	position:absolute;
 	text-align:left;
-	left:9vw;
+	
 }
 
 .dates
@@ -225,7 +240,6 @@ td
 
 span
 {
-	display:inline;
 	text-transform:uppercase;
 	text-align:right;
 	font-weight:bold;
@@ -233,10 +247,7 @@ span
 
 .download
 {
-	z-index:2;
-    position:absolute;
-	top:93vh;
-	left:17.5vw;
+    position:relative;
 	width:auto;
 	height:auto;
 }
@@ -246,12 +257,8 @@ span
     background-color: #848484;
     color: #212121;
 	font-family: 'Work Sans', sans-serif;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-	padding-right: 2.5vw;
-	padding-left: 2.5vw;
-    font-size: 1.15vw;
 	font-weight:bold;
+	padding:1em 2em;
     border: none;
     cursor: pointer;
 }
@@ -264,7 +271,7 @@ h1
 	position:relative;
 	font-weight:200;
 	text-align:center;
-	font-size:4.5vw;
+	font-size:300%;
 }
 
 #scaleup
@@ -487,58 +494,63 @@ label
 
 .animation
 {
+	width:auto;
+	margin:auto;
+	background-color:#eee;
+}
+
+.code
+{
+	z-index:2;
 	position:relative;
-	top:35vh;
-	left:32vw;
-	width:20vw;
-	height:16.2vw;
+	
 }
 
 .desk
 {
-	position:absolute;
-	top:20.5vh;
-	left:2vw;
+	position:relative;
+	width:auto;
+	height:auto;
 }
 
 .computer
 {
-	position:absolute;
-	top:0vh;
-	left:5vw;
+	position:relative;
+	width:auto;
+	height:auto;
 }
 
 .firstBrackets
 {
 	position:relative;
-	top:1.75vh;
-	left:-1.5vw;
+	width:auto;
+	height:auto;
 }
 
 .firstLine
 {
 	position:relative;
-	top:-1vh;
-	left:.6vw;
+	width:auto;
+	height:auto;
 }
 
 .secondLine
 {
 	position:relative;
-	top:-4vh;
-	left:0vw;
+	width:auto;
+	height:auto;
 }
 
 .thirdLine
 {
 	position:relative;
-	top:-7vh;
-	left:.25vw;
+	width:auto;
+	height:auto;
 }
 
 .lastBrackets
 {
 	position:relative;
-	top:-8vh;
-	left:-1.60vw;
+	width:auto;
+	height:auto;
 }
