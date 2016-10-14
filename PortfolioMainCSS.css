@@ -2,7 +2,7 @@ body
 {
 	text-align:center;
 	background-image:url("Pictures/house_lights_windows_yard_110184_3840x2160.jpg");
-	background-size:100% 100%;
+	background-size:100vw 100vh;
 	background-color:#DEDEDE;
 	background-attachment:fixed;
 	font-family: 'Work Sans', sans-serif;
@@ -45,15 +45,14 @@ body
 
 .page
 {
-	position:absolute;
-	left:24vw;
+	position:relative;
+	display:inline-block;
+	margin:0 auto;
 	top:30vh;
-	display:inline;
-	height:30vh;
-	width: 55vw;
 	background-color:#aaaaaa;
-	z-index:-1;
 	opacity:0.7;
+	font-size:2.75vh;
+	padding:5vh 16vw;
 	
 	animation-name:pageAnimation;
 	animation-duration:2s;
@@ -76,20 +75,10 @@ body
 
 .title
 {
-	position:absolute;
-	left:10vw;
-	text-align:center;
-	z-index:-1;
-	font-size:1.50vw;
-}
-
-.resumePage
-{
 	position:relative;
-	width:40em;
-	margin:auto;
-	background-color:#aaaaaa;
-	opacity:0.7;
+	display:inline;
+	text-align:center;
+	vertical-align:middle;
 }
 
 .aboutMePage
@@ -109,17 +98,19 @@ body
 {
 	width:auto;
 	position:relative;
+	display:inline-block;
 	background-color:#aaaaaa;
 	opacity:0.7;
 	font-weight:200;
-	font-size:100%;
+	font-size:1.65vh;
+	padding:.75vh 3.5vw;
 }
 
 .projects
 {
 	position:relative;
 	text-align:center;
-	padding:0.40em;
+	vertical-align:middle;
 }
 
 .contactPage
@@ -201,6 +192,15 @@ body
 	opacity:0.7;
 }
 
+.resumePage
+{
+	
+	width:50vw;
+	margin:auto;
+	background-color:#aaaaaa;
+	opacity:0.7;
+	font-size:150%;
+}
 
 /*resume table stuff */
 /*-------------------*/
@@ -209,8 +209,8 @@ table
 	position:relative;
 	word-wrap:break-word;
 	display:block-inline;
-	width:36em;
-	height:30em;
+	width:auto;
+	height:auto;
 	margin:auto;
 }
 
@@ -494,9 +494,11 @@ label
 
 .animation
 {
+	position:relative;
 	width:auto;
-	margin:auto;
-	background-color:#eee;
+	margin:20vh auto;
+	vertical-align:middle;
+	z-index:-1;
 }
 
 .code
@@ -511,6 +513,7 @@ label
 	position:relative;
 	width:auto;
 	height:auto;
+	
 }
 
 .computer
